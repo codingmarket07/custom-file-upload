@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #8178d3;
+	color: #63686e;
+}
+
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	background: #fff;
+}
+
+.title{
+	background: #f3f4f8;
+	padding: 15px;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.file_upload_list li .file_item{
+	display: flex;
+	border-bottom: 1px solid #f3f4f8;
+    padding: 15px 20px;
+}
+.file_item .format{
+	background: #8178d3;	border-radius: 10px;
+	width: 45px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	margin-right: 15px;
+}
+
+.file_item .file_progress{
+	width: calc(100% - 60px);
+	font-size: 14px;
+}
+
+.file_item .file_info,
+.file_item .file_size_wrap{
+	display: flex;
+	align-items: center;
+}
+.file_item .file_info{
+	justify-content: space-between;
+}
+.file_item .file_progress .progress{
+	width: 100%;
+	height: 4px;
+	background: #efefef;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-top: 8px;
+	position: relative;
+}
+
+.file_item .file_progress .progress .inner_progress{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #58e380;
+}
+.file_item .file_size_wrap .file_size{
+	margin-right: 15px;
+}
+.file_item .file_size_wrap .file_close{
+	border: 1px solid #8178d3;
+	color: #8178d3;
+	width: 20px;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.file_item .file_size_wrap .file_close:hover{
+	background: #8178d3;
+	color: #fff;
+}
+
+.choose_file label{
+	display: block;
+	border: 2px dashed #8178d3;
+	padding: 15px;
+	width: calc(100% - 20px);
+	margin: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.choose_file #choose_file{
+	outline: none;
+	opacity: 0;
+    width: 0;
+}
+.choose_file span{
+	font-size: 14px;
+	color: #8178d3;
+}
+
+.choose_file label:hover span{
+	text-decoration: underline;
+}
